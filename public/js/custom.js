@@ -50,52 +50,6 @@ $(document).ready(function () {
   });
 
   //=====================
-  // Product page
-  //=====================
-  // $(".portfolio-content.owl-carousel").owlCarousel({
-  //   loop: true,
-  //   margin: 10,
-  //   nav: false,
-  //   autoplay: true,
-  //   dots: true,
-  //   responsive: {
-  //     0: {
-  //       items: 1,
-  //     },
-  //   },
-  // });
-  // $(".service-mobile-mockup-row.owl-carousel").owlCarousel({
-  //   loop: true,
-  //   margin: 10,
-  //   nav: false,
-  //   dots: true,
-  //   autoplay: true,
-  //   responsive: {
-  //     0: {
-  //       items: 1,
-  //     },
-  //   },
-  // });
-  // $(".brand-slider.owl-carousel").owlCarousel({
-  //   loop: true,
-  //   margin: 10,
-  //   nav: false,
-  //   dots: true,
-  //   autoplay: true,
-  //   responsive: {
-  //     0: {
-  //       items: 2,
-  //     },
-  //     600: {
-  //       items: 3,
-  //     },
-  //     1000: {
-  //       items: 5,
-  //     },
-  //   },
-  // });
-
-  //=====================
   // Pricing Page
   //=====================
   //toggle the component with class accordion_body

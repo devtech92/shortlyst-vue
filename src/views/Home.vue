@@ -49,7 +49,26 @@
               </div>
             </div>
           </div>
-          <div class="brand-slider owl-carousel">
+          <carousel
+            :nav="false"
+            :autoplay="true"
+            class="brand-slider"
+            :margin="10"
+            :loop="true"
+            :stagePadding="100"
+            :dots="false"
+            :responsive="{
+              0: {
+                items: 2,
+              },
+              600: {
+                items: 3,
+              },
+              1000: {
+                items: 5,
+              },
+            }"
+          >
             <div class="brand-img">
               <img src="@/assets/images/logo1.png" />
             </div>
@@ -65,7 +84,25 @@
             <div class="brand-img">
               <img src="@/assets/images/logo5.svg" />
             </div>
-          </div>
+          </carousel>
+
+          <!-- <div class="brand-slider owl-carousel">
+            <div class="brand-img">
+              <img src="@/assets/images/logo1.png" />
+            </div>
+            <div class="brand-img">
+              <img src="@/assets/images/logo2.svg" />
+            </div>
+            <div class="brand-img">
+              <img src="@/assets/images/logo3.svg" />
+            </div>
+            <div class="brand-img">
+              <img src="@/assets/images/logo4.svg" />
+            </div>
+            <div class="brand-img">
+              <img src="@/assets/images/logo5.svg" />
+            </div>
+          </div> -->
         </div>
       </section>
       <section class="business-software">
@@ -320,21 +357,19 @@
         </div>
       </section>
     </main>
-    
-    
   </div>
 </template>
 
 
 <script>
 // @ is an alias to /src
-
+import carousel from "vue-owl-carousel";
 import DefaultLayout from "@/components/layouts/DefaultLayout.vue";
 
 export default {
   name: "Home",
   components: {
-    // ,
+    carousel,
   },
   created() {
     this.$emit(`update:layout`, DefaultLayout);
