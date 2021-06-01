@@ -1,13 +1,7 @@
 <template>
   <section class="login-template">
     <div class="login-row">
-      <div
-        class="login-column"
-        :style="{
-          backgroundImage:
-            'url(' + require('@/assets/images/login-layer.png') + ')',
-        }"
-      >
+      <div class="login-column">
         <div class="login-logo">
           <img src="@/assets/images/white-logo.png" />
         </div>
@@ -21,7 +15,9 @@
           <img src="@/assets/images/login-vector3.png" />
         </div>
         <div class="login-logo">
-          <img src="@/assets/images/white-logo.png" />
+          <router-link to="/">
+            <img src="@/assets/images/white-logo.png" />
+          </router-link>
         </div>
         <div class="login-title">
           <h2>
@@ -85,7 +81,10 @@
               </p>
             </div>
             <div class="form-rows">
-              <h6>Already have an account? <router-link to="/login">Sign in</router-link></h6>
+              <h6>
+                Already have an account?
+                <router-link to="/login">Sign in</router-link>
+              </h6>
             </div>
           </form>
         </div>

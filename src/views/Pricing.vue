@@ -24,14 +24,14 @@
                 Find a plan that<br />
                 best fits you
               </h2>
-              <div class="bill-annualy">
+              <!-- <div class="bill-annualy">
                 <h6>Bill Monthly</h6>
                 <label class="switch">
                   <input type="checkbox" id="togBtn" />
                   <div class="slider round"></div>
                 </label>
                 <h6>Bill Annually</h6>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -118,13 +118,10 @@
                       class="mr-2"
                     />Collaboration features
                   </li>
+
                   <li>
-                    <img src="@/assets/images/blue-check.png" class="mr-2" />100
-                    contact reveal/month
-                  </li>
-                  <li>
-                    <img src="@/assets/images/blue-check.png" class="mr-2" />100
-                    contact reveal/month
+                    <img src="@/assets/images/blue-check.png" class="mr-2" />
+                    100 contact reveal/month
                   </li>
                   <li>
                     <img
@@ -193,6 +190,11 @@
               <div class="vector3">
                 <img src="@/assets/images/vector.png" />
               </div>
+
+              <accordion :items="accordionItems"></accordion>
+
+              <!--              
+
               <div class="accordian-tabs">
                 <div class="accordion_head">
                   <h5>
@@ -303,7 +305,7 @@
                     Landing-Page-Request Demo-2*
                   </p>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -314,20 +316,56 @@
 
 <script>
 import DefaultLayout from "@/components/layouts/DefaultLayout.vue";
+import Accordion from "@/components/Accordion.vue";
 
 export default {
   name: "Pricing",
+  components: { Accordion },
+  data() {
+    return {
+      accordionItems: [
+        {
+          title: "How does Shortlyst differ from other tools?",
+          contents:
+            "In Shortlyst we pride ourselves in being every recruiter’s handy tool. We want you to hire the best team with the least amount of effort required. Hence we do not hide any talents from our database in your search results! We even help you automate your efforts in building relationships with the talents you want.",
+        },
+        {
+          title: "What is a contact credit?",
+          contents:
+            "A contact credit is used to reveal premium information such as contact details of talent profiles. 1 contact credit = 1 profile contact reveal                                         A credit will be deducted from your quota each time you click on the hidden contact and it will remain unlocked for future sessions.",
+        },
+        {
+          title: "What are the differences between plans?",
+          contents:
+            "Each pricing plan offers a different number of features and contact credits tailored to different needs. For further explanation on the difference, please refer to the pricing above to see what features and contact credits are provided for different packages.",
+        },
+        {
+          title: "Will my plan renew automatically?",
+          contents:
+            "Your plan renews automatically based on your billing plan (monthly or annually). Your monthly or annual contact credits will also be issued automatically.",
+        },
+        {
+          title: "What happens to unused contact credits?",
+          contents:
+            "Any credits obtained through our subscription plan does not roll over to the next month. Additional purchase of credits will roll over to the next month and you will be able to use it for up to 90 days. We always deplete credits from your subscription plan first before deducting from your purchased credits.",
+        },
+        {
+          title: "Can I cancel my subscription?",
+          contents:
+            "For Shortlyst Pro accounts:<br /> You can cancel your subscription at any time. To cancel, go to Settings and then to the Subscription page. To upgrade to Shortlyst Enterprise, please Contact Sales. *links to Landing-Page-Request Demo-2*",
+        },
+      ],
+    };
+  },
   created() {
     this.$emit(`update:layout`, DefaultLayout);
   },
-  mounted() {
-    
-  },
+  mounted() {},
 };
 </script>
 
 <style>
 .prive-banner {
-  padding-top: 100px;
+  padding-top: 250px;
 }
 </style>

@@ -3,6 +3,9 @@ import App from "./App.vue";
 import router from "./router";
 
 // plugins
+import { BootstrapVue } from "bootstrap-vue";
+Vue.use(BootstrapVue);
+
 // import LoadScript from "vue-plugin-load-script";
 // Vue.use(LoadScript);
 import "owl.carousel/dist/assets/owl.carousel.css";

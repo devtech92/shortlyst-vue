@@ -42,7 +42,7 @@
                 <router-link to="/login"> Login </router-link>
               </li>
               <li>
-                <router-link to="/sign-up"> Get started for free </router-link>
+                <router-link to="/contact-sales"> Get started for free </router-link>
               </li>
             </ul>
           </div>

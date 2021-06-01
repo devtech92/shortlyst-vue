@@ -5,16 +5,18 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* font-family: 'Public Sans', sans-serif; */
 @font-face {
   font-family: code-next-extra-bold;
-  src: url("../fonts/code-next-extra-bold.woff");
+  // src: url("../fonts/code-next-extra-bold.woff");
+  src: url("../fonts/Fontfabric-Code-Next-Bold.otf");
 }
 @font-face {
   font-family: coden-ext-extra-bold-talic;
-  src: url("../fonts/coden-ext-extra-bold-talic.woff");
+  // src: url("../fonts/coden-ext-extra-bold-talic.woff");
+  src: url("../fonts/Fontfabric-Code-Next-Bold.otf");
 }
 /*************************
         General Style
@@ -23,7 +25,8 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: "Public Sans", sans-serif;
+  // font-family: "Public Sans", sans-serif;
+  font-family: "code-next-extra-bold";
   background-color: #fff;
   overflow-x: hidden;
 }
@@ -31,7 +34,8 @@ p {
   font-size: 14px;
   margin: 0;
   word-break: break-word;
-  font-family: "Public Sans", sans-serif;
+  // font-family: "Public Sans", sans-serif;
+  font-family: "code-next-extra-bold";
   font-weight: 400;
 }
 .pricing-content {
@@ -265,13 +269,13 @@ img {
 }
 .reach-content h4 {
   color: #222222;
-  font-size: 37px;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 .reach-content p {
   color: #747d8c;
-  font-size: 20px;
+  font-size: 19px;
   margin-bottom: 20px;
 }
 .btn-outline {
@@ -875,7 +879,7 @@ footer {
   font-weight: 700;
 }
 .contacts-sales .salse-title p {
-  font-size: 11px;
+  font-size: 15px;
 }
 .term-header {
   padding: 40px 0;
@@ -1249,17 +1253,17 @@ input:checked + .slider:before {
 .small-triangle img {
   margin-left: auto;
 }
-.reach-content h4 {
-  color: #222222;
-  font-size: 37px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.reach-content p {
-  color: #747d8c;
-  font-size: 20px;
-  margin-bottom: 20px;
-}
+// .reach-content h4 {
+//   color: #222222;
+//   font-size: 30px;
+//   font-weight: 700;
+//   margin-bottom: 20px;
+// }
+// .reach-content p {
+//   color: #747d8c;
+//   font-size: 20px;
+//   margin-bottom: 20px;
+// }
 .btn-outline {
   color: #0085ff;
   border: 1px solid #0085ff;
@@ -1860,9 +1864,9 @@ footer {
   font-size: 35px;
   font-weight: 700;
 }
-.contacts-sales .salse-title p {
-  font-size: 11px;
-}
+// .contacts-sales .salse-title p {
+//   font-size: 11px;
+// }
 .term-header {
   padding: 40px 0;
 }
@@ -2031,10 +2035,10 @@ footer {
   right: 0;
   top: 40%;
 }
-.faq-vector3 {
-  left: 0;
-  bottom: 70px;
-}
+// .faq-vector3 {
+//   left: 0;
+//   bottom: 70px;
+// }
 .faq-content {
   padding-bottom: 100px;
 }
@@ -2106,11 +2110,11 @@ footer {
 }
 .banner-vector {
   left: 0;
-  top: 210px;
+  top: 165px;
 }
 .banner-vector1 {
   left: -30px;
-  top: 460px;
+  top: 300px;
 }
 .banner-vector3 {
   top: 90px;
@@ -2194,7 +2198,7 @@ footer {
 }
 .faq-vector3 {
   left: 0;
-  bottom: 70px;
+  bottom: -35px;
 }
 .faq-content {
   padding-bottom: 100px;
@@ -2238,7 +2242,7 @@ footer {
   display: block;
 }
 .pricing-section {
-  margin-top: -240px;
+  margin-top: -100px;
 }
 .pricing-head {
   border-bottom: 2px solid #222222;

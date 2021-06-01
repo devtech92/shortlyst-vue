@@ -12,7 +12,9 @@
           <img src="@/assets/images/login-vector3.png" />
         </div>
         <div class="login-logo">
-          <img src="@/assets/images/white-logo.png" />
+          <router-link to="/">
+            <img src="@/assets/images/white-logo.png" />
+          </router-link>
         </div>
         <div class="login-title">
           <h2>
@@ -26,13 +28,32 @@
           <h3>Sign In</h3>
           <div class="form-rows">
             <a href="#" class="btn-google">
-              <img src="@/assets/images/google.png" class="mr-2" /> Sign In with Google
+              <img src="@/assets/images/google.png" class="mr-2" /> Sign In with
+              Google
             </a>
           </div>
           <div class="form-rows">
-            <p class="or text-center">OR</p>
+            <p class="or text-center">Or</p>
           </div>
           <form>
+            <div class="form-rows">
+              <div class="placeholder-wrap">
+                <input type="email" class="general-field" />
+                <span class="placeholder">
+                  Email<b class="important" style="color: red">*</b>
+                </span>
+              </div>
+            </div>
+
+            <div class="form-rows">
+              <div class="placeholder-wrap">
+                <input type="password" class="general-field" />
+                <span class="placeholder">
+                  Password<b class="important" style="color: red">*</b>
+                </span>
+              </div>
+            </div>
+<!-- 
             <div class="form-rows">
               <input type="email" class="general-field" placeholder="Email*" />
             </div>
@@ -43,14 +64,18 @@
                 placeholder="Password*"
               />
             </div>
+             -->
             <div class="form-rows forgot-passwrod">
-              <router-link to="/forgot-password">Forgot Passwrod</router-link>
+              <router-link to="/forgot-password">Forgot your password?</router-link>
             </div>
             <div class="form-rows">
               <button class="btn btn-login">Sign In</button>
             </div>
             <div class="form-rows">
-              <h6>Don't have a Shortlyst account? <router-link to="/sign-up"> Sign up</router-link></h6>
+              <h6>
+                Don't have a Shortlyst account?
+                <router-link to="/sign-up"> Sign up</router-link>
+              </h6>
             </div>
           </form>
         </div>
@@ -76,3 +101,34 @@ export default {
   mounted() {},
 };
 </script>
+
+<style scoped>
+.placeholder-wrap {
+  position: relative;
+  /* margin: 20px; */
+  /* display: inline-block; */
+  /* background: #fff; */
+}
+.placeholder-wrap .placeholder {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #888;
+  margin-top: -0.5em;
+  line-height: 1em;
+  z-index: 9;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+.placeholder-wrap input {
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+  /* border: 1px #999 solid;
+  padding: 4px 6px; */
+}
+.placeholder-wrap input:focus + .placeholder {
+  display: none;
+}
+</style>

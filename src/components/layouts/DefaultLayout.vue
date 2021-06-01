@@ -16,9 +16,9 @@
           <div class="col-md-12">
             <div class="text-center footer-content">
               <h3>Build winning teams today</h3>
-              <router-link to="/sign-up" class="btn btn-blue mt-2"
-                >Get started for free</router-link
-              >
+              <router-link to="/contact-sales" class="btn btn-blue mt-2">
+                Get started for free
+              </router-link>
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@
                     <router-link to="/pricing">Pricing</router-link>
                   </li>
                   <li>
-                    <router-link to="/pricing">Pricing</router-link>
+                    <router-link to="/contact-sales">Request a Demo</router-link>
                   </li>
                   <li>
                     <router-link to="/contact-us">Contact Us</router-link>

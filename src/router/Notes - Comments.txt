@@ -1,0 +1,14 @@
+-Pricing Page
+    There is an icon missing here (FAQ Section)
+
+-Contact Us 
+    Textbox missing in map 
+
+-Contact Sales
+    Please refer to Word documentation for content
+
+-Forgot Password
+    Some placements of icons are still not the same as Figma/Zeplin
+
+-Login 
+    The line doodles on the outside of “Say hello…” are not the same as Figma/Zeplin

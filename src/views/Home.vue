@@ -27,14 +27,14 @@
                 </div>
                 <h1>
                   Say hello to your ideal<br />
-                  new <span>customers</span>
+                  new <span>{{ whois[0] }}</span>
                 </h1>
                 <p>
                   Lead conversion reimagined, using AI & Automation technology.
                 </p>
-                <a href="product.html" class="btn btn-blue mt-2"
-                  >Get started for free</a
-                >
+                <router-link to="/contact-sales" class="btn btn-blue mt-2">
+                  Get started for free
+                </router-link>
               </div>
             </div>
           </div>
@@ -49,7 +49,35 @@
               </div>
             </div>
           </div>
-          <carousel
+          <div class="brand-slider brand-images">
+            <div
+              class="brand-img d-flex justify-content-center align-items-center"
+            >
+              <img src="@/assets/images/logo1.png" class="fixed-size-img" />
+            </div>
+            <div
+              class="brand-img d-flex justify-content-center align-items-center"
+            >
+              <img src="@/assets/images/logo2.svg" class="fixed-size-img" />
+            </div>
+            <div
+              class="brand-img d-flex justify-content-center align-items-center"
+            >
+              <img src="@/assets/images/logo3.svg" class="fixed-size-img" />
+            </div>
+            <div
+              class="brand-img d-flex justify-content-center align-items-center"
+            >
+              <img src="@/assets/images/logo4.svg" class="fixed-size-img" />
+            </div>
+            <div
+              class="brand-img d-flex justify-content-center align-items-center"
+            >
+              <img src="@/assets/images/logo5.svg" class="fixed-size-img" />
+            </div>
+          </div>
+          <!-- <carousel
+          
             :nav="false"
             :autoplay="true"
             class="brand-slider"
@@ -84,25 +112,7 @@
             <div class="brand-img">
               <img src="@/assets/images/logo5.svg" />
             </div>
-          </carousel>
-
-          <!-- <div class="brand-slider owl-carousel">
-            <div class="brand-img">
-              <img src="@/assets/images/logo1.png" />
-            </div>
-            <div class="brand-img">
-              <img src="@/assets/images/logo2.svg" />
-            </div>
-            <div class="brand-img">
-              <img src="@/assets/images/logo3.svg" />
-            </div>
-            <div class="brand-img">
-              <img src="@/assets/images/logo4.svg" />
-            </div>
-            <div class="brand-img">
-              <img src="@/assets/images/logo5.svg" />
-            </div>
-          </div> -->
+          </carousel> -->
         </div>
       </section>
       <section class="business-software">
@@ -136,12 +146,12 @@
                     Shortlyst<span>. TALENT</span>
                   </h6>
                   <div class="hire-btns">
-                    <a href="pricing.html" class="btn btn-blue-start"
-                      >Start trial</a
-                    >
-                    <a href="pricing.html" class="btn btn-outline-blue"
-                      >Learn More</a
-                    >
+                    <router-link to="/contact-sales" class="btn btn-blue-start">
+                      Request a Demo
+                    </router-link>
+                    <router-link to="/product" class="btn btn-outline-blue">
+                      Learn More
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -158,7 +168,7 @@
                     Shortlyst<span>. GROWTH</span>
                   </h6>
                   <div class="hire-btns">
-                    <a href="#" class="btn btn-comming">Comming Soon</a>
+                    <a href="#" class="btn btn-comming">Coming Soon</a>
                   </div>
                 </div>
               </div>
@@ -318,9 +328,9 @@
                         With minimum input, our AI will seek through <br />
                         550M+ data points to give you the best leads.
                       </p>
-                      <a href="product.html" class="btn btn-outline"
-                        >Learn more</a
-                      >
+                      <router-link to="/product" class="btn btn-outline">
+                        Learn more
+                      </router-link>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -332,14 +342,14 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="reach-content">
-                      <h4>Automate your outreach <br />to global prospects</h4>
+                      <h4>Automate your outreach to global prospects</h4>
                       <p>
-                        Engage with customers or candidates and build<br />
+                        Engage with customers or candidates and build
                         relationships at scale.
                       </p>
-                      <a href="product.html" class="btn btn-outline"
-                        >Learn more</a
-                      >
+                      <router-link to="/product" class="btn btn-outline">
+                        Learn more
+                      </router-link>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -363,17 +373,40 @@
 
 <script>
 // @ is an alias to /src
-import carousel from "vue-owl-carousel";
+// import carousel from "vue-owl-carousel";
 import DefaultLayout from "@/components/layouts/DefaultLayout.vue";
 
 export default {
   name: "Home",
   components: {
-    carousel,
+    // carousel,
+  },
+  data() {
+    return {
+      whois: ["hires", "customers"],
+    };
   },
   created() {
     this.$emit(`update:layout`, DefaultLayout);
   },
-  mounted() {},
+  mounted() {
+    window.setInterval(() => {
+      this.pollPerson();
+    }, 2000);
+  },
+  methods: {
+    pollPerson() {
+      const first = this.whois.shift();
+      this.whois = this.whois.concat(first);
+    },
+  },
 };
 </script>
+
+<style scoped>
+.fixed-size-img {
+  width: 100%; /* You can set the dimensions to whatever you want */
+  min-height: 63px;
+  object-fit: contain;
+}
+</style>

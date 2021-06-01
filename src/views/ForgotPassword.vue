@@ -5,7 +5,9 @@
         <div class="col-md-12">
           <div class="salse-header">
             <div class="login-logo">
-              <img src="@/assets/images/white-logo.png" />
+              <router-link to="/">
+                <img src="@/assets/images/white-logo.png" />
+              </router-link>
             </div>
           </div>
         </div>
