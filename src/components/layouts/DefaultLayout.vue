@@ -62,13 +62,13 @@
                 <h5>Information</h5>
                 <ul>
                   <li>
-                    <router-link to="/terms">Term of Services</router-link>
+                    <router-link to="/terms">Terms of Service</router-link>
                   </li>
                   <li>
-                    <router-link to="/privacy"> Privacy Ppolicy </router-link>
+                    <router-link to="/privacy">Privacy Policy </router-link>
                   </li>
                   <li>
-                    <router-link to="/faq"> FAQs </router-link>
+                    <router-link to="/faq"> FAQ </router-link>
                   </li>
                 </ul>
               </div>

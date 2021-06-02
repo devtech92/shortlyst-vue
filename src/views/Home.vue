@@ -51,27 +51,27 @@
           </div>
           <div class="brand-slider brand-images">
             <div
-              class="brand-img d-flex justify-content-center align-items-center"
+              class="brand-img"
             >
               <img src="@/assets/images/logo1.png" class="fixed-size-img" />
             </div>
             <div
-              class="brand-img d-flex justify-content-center align-items-center"
+              class="brand-img"
             >
               <img src="@/assets/images/logo2.svg" class="fixed-size-img" />
             </div>
             <div
-              class="brand-img d-flex justify-content-center align-items-center"
+              class="brand-img"
             >
               <img src="@/assets/images/logo3.svg" class="fixed-size-img" />
             </div>
             <div
-              class="brand-img d-flex justify-content-center align-items-center"
+              class="brand-img"
             >
               <img src="@/assets/images/logo4.svg" class="fixed-size-img" />
             </div>
             <div
-              class="brand-img d-flex justify-content-center align-items-center"
+              class="brand-img"
             >
               <img src="@/assets/images/logo5.svg" class="fixed-size-img" />
             </div>
@@ -168,7 +168,7 @@
                     Shortlyst<span>. GROWTH</span>
                   </h6>
                   <div class="hire-btns">
-                    <a href="#" class="btn btn-comming">Coming Soon</a>
+                    <a href="javascript:void(0)" class="btn btn-comming">Coming Soon</a>
                   </div>
                 </div>
               </div>
@@ -321,7 +321,7 @@
             <div class="col-md-12">
               <div class="reach-row">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-5">
                     <div class="reach-content">
                       <h4>Instant leads using our <br />AI-powered search</h4>
                       <p>
@@ -333,7 +333,7 @@
                       </router-link>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-7">
                     <div class="reach-image">
                       <img src="@/assets/images/ai.png" />
                     </div>

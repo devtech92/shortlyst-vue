@@ -24,14 +24,15 @@
                 Find a plan that<br />
                 best fits you
               </h2>
-              <!-- <div class="bill-annualy">
+               <div class="bill-annualy">
                 <h6>Bill Monthly</h6>
                 <label class="switch">
                   <input type="checkbox" id="togBtn" />
                   <div class="slider round"></div>
                 </label>
                 <h6>Bill Annually</h6>
-              </div> -->
+                <img src="@/assets/images/save-20.png" class="save-imgs" />
+              </div> 
             </div>
           </div>
         </div>
@@ -174,7 +175,7 @@
           <div class="col-md-12">
             <div class="faq-content text-center">
               <h2>Questions you might have</h2>
-              <p>Need more help? Checkout our<a href="#"> FAQs</a></p>
+              <p>Need more help? Check out our <a href="#"> FAQ</a></p>
             </div>
           </div>
         </div>

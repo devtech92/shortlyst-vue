@@ -1,5 +1,6 @@
 <template>
   <main>
+  <div class="empty-header"></div>
     <section class="term-header">
       <div class="container">
         <div class="row">
