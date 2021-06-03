@@ -497,11 +497,9 @@ img {
 .brand-img img{
   filter: grayscale(100%);
   cursor: pointer;
-  opacity: 0.2;
 }
-.brand-img:hover img{
+.brand-img:hover {
   filter: grayscale(0);
-  opacity: 1;
 }
 .brand-slider .owl-stage {
   display: flex;
@@ -2598,7 +2596,6 @@ footer {
   .your-reach {
     padding: 20px 0 20px 0;
   }
-  
   .reach-row .row:nth-child(2n + 1) .col-md-6:last-child {
     padding-left: 0;
   }
