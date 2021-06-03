@@ -28,6 +28,16 @@
                 <router-link to="/contact-us"> Contact us </router-link>
               </li>
             </ul>
+            <div class="login-manu mobile-menus">
+              <ul>
+                <li>
+                  <router-link to="/login"> Login </router-link>
+                </li>
+                <li>
+                  <router-link to="/contact-sales"> Get started for free </router-link>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="manu-btn">
             <span class="sr-onlys"></span>
@@ -36,7 +46,7 @@
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
-          <div class="login-manu">
+          <div class="login-manu desktop-menus">
             <ul>
               <li>
                 <router-link to="/login"> Login </router-link>

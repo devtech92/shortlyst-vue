@@ -119,10 +119,12 @@ export default {
   z-index: 9;
   overflow: hidden;
   white-space: nowrap;
+  font-family: 'Public Sans', sans-serif;
   width: 100%;
 }
 .placeholder-wrap input {
   background-color: transparent;
+  font-family: 'Public Sans', sans-serif;
   position: relative;
   z-index: 10;
   /* border: 1px #999 solid;

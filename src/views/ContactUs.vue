@@ -1,5 +1,6 @@
 <template>
   <main>
+    <div class="empty-header"></div>
     <section class="contact-us">
       <div class="container">
         <div class="row">
@@ -61,9 +62,66 @@
             </form>
           </div>
           <div class="col-md-5">
+            <div class="contact-details-row">
             <div class="map">
               <img src="@/assets/images/map1.png" />
             </div>
+            <div class="contact-details">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Indonesia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Singapore</a>
+                </li>
+              
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="contact-headers">
+                    <h6>PT. SHORLYST LABS INTERNATIONAL</h6>
+                    <p>Wisma BNI 46, Lt 45</p>
+                    <p>Jl. Jend. Sudirman No. Kav. 1, RT.10/RW.11 Karet Tengsin, Tanahabang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220</p>
+                  </div>
+                  <div class="contacts-footer">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          business@shorlyst.ai
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          support@shorlyst.ai
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="contact-headers">
+                    <h6>PT. SHORLYST LABS INTERNATIONAL</h6>
+                    <p>Wisma BNI 46, Lt 45</p>
+                    <p>Jl. Jend. Sudirman No. Kav. 1, RT.10/RW.11 Karet Tengsin, Tanahabang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220</p>
+                  </div>
+                  <div class="contacts-footer">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          business@shorlyst.ai
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          support@shorlyst.ai
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
             <div class="vector3">
               <img src="@/assets/images/contact-us-vector2.png" />
             </div>
@@ -93,8 +151,3 @@ export default {
 </script>
 
 
-<style scoped>
-.contact-us {
-  padding-top: 100px;
-}
-</style>
