@@ -2,7 +2,7 @@
   <main>
     <section class="term-header">
       <div class="container">
-        <div class="row">
+        <div class="row" style="margin-top: 100px">
           <div class="col-md-12">
             <div class="term-title text-center">
               <h2>Terms of Service</h2>

@@ -76,8 +76,8 @@
             <div class="form-rows">
               <p>
                 By clicking Sign In, you agree to our
-                <a href="">Term of Services</a> and
-                <a href="">Privacy Policy</a>
+                <router-link to="/terms">Term of Services</router-link> and
+                <router-link to="/privacy">Privacy Policy</router-link>
               </p>
             </div>
             <div class="form-rows">

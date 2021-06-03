@@ -10,13 +10,13 @@
 /* font-family: 'Public Sans', sans-serif; */
 @font-face {
   font-family: code-next-extra-bold;
-  // src: url("../fonts/code-next-extra-bold.woff");
-  src: url("../fonts/Fontfabric-Code-Next-Bold.otf");
+  src: url("../fonts/code-next-extra-bold.woff");
+  // src: url("../fonts/Fontfabric-Code-Next-Bold.otf");
 }
 @font-face {
   font-family: coden-ext-extra-bold-talic;
-  // src: url("../fonts/coden-ext-extra-bold-talic.woff");
-  src: url("../fonts/Fontfabric-Code-Next-Bold.otf");
+  src: url("../fonts/coden-ext-extra-bold-talic.woff");
+  // src: url("../fonts/Fontfabric-Code-Next-Bold.otf");
 }
 /*************************
         General Style
@@ -620,11 +620,11 @@ footer {
 .login-column1 {
   width: 55%;
 }
-.login-logo {
-  position: absolute;
-  top: 30px;
-  left: 125px;
-}
+// .login-logo {
+//   position: absolute;
+//   top: 30px;
+//   left: 125px;
+// }
 .login-title h2 {
   color: #fff;
   font-size: 56px;
@@ -1609,7 +1609,7 @@ footer {
 .login-logo {
   position: absolute;
   top: 30px;
-  left: 125px;
+  left: 60px;
 }
 .login-title h2 {
   color: #fff;

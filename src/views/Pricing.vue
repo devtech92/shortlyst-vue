@@ -24,14 +24,14 @@
                 Find a plan that<br />
                 best fits you
               </h2>
-              <!-- <div class="bill-annualy">
+              <div class="bill-annualy">
                 <h6>Bill Monthly</h6>
                 <label class="switch">
                   <input type="checkbox" id="togBtn" />
                   <div class="slider round"></div>
                 </label>
                 <h6>Bill Annually</h6>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
@@ -56,30 +56,54 @@
                     />550M+ database access
                   </li>
                   <li>
-                    <img src="@/assets/images/green-check.png" class="mr-2" />AI
-                    Search engine
-                    <img src="@/assets/images/info.png" class="ml-2" />
+                    <img src="@/assets/images/green-check.png" class="mr-2" />
+                    AI Search engine
+                    <img
+                      src="@/assets/images/info.png"
+                      class="ml-2"
+                      @click="$bvModal.show('ai-search-modal')"
+                    />
+                    <b-modal id="ai-search-modal" hide-footer hide-header size="sm">
+                      <p class="my-4" v-for="i in 3" :key="i">
+                        Cras mattis consectetur purus sit amet fermentum. Cras
+                        justo odio, dapibus ac facilisis in, egestas eget quam.
+                        Morbi leo risus, porta ac consectetur ac, vestibulum at
+                        eros.
+                      </p>
+                    </b-modal>
                   </li>
                   <li>
                     <img
                       src="@/assets/images/green-check.png"
                       class="mr-2"
                     />Smart inbox
-                    <img src="@/assets/images/info.png" class="ml-2" />
+                    <img
+                      src="@/assets/images/info.png"
+                      class="ml-2"
+                      @click="$bvModal.show('smart-inbox-modal')"
+                    />
+                    <b-modal id="smart-inbox-modal" hide-footer hide-header size="sm">
+                      <p class="my-4" v-for="i in 2" :key="i">
+                        Cras mattis consectetur purus sit amet fermentum. Cras
+                        justo odio, dapibus ac facilisis in, egestas eget quam.
+                        Morbi leo risus, porta ac consectetur ac, vestibulum at
+                        eros.
+                      </p>
+                    </b-modal>
                   </li>
                   <li>
                     <img
                       src="@/assets/images/green-check.png"
                       class="mr-2"
-                    />100 Linkedin reach outs/week
+                    />100 LinkedIn reach outs/week
                   </li>
                   <li>
-                    <img src="@/assets/images/green-check.png" class="mr-2" />50
-                    contact reveal/month
+                    <img src="@/assets/images/green-check.png" class="mr-2" />
+                    50 contact credits/month
                   </li>
                   <li>
-                    <img src="@/assets/images/green-check.png" class="mr-2" />10
-                    active jobs
+                    <img src="@/assets/images/green-check.png" class="mr-2" />
+                    10 active projects
                   </li>
                 </ul>
               </div>
@@ -174,7 +198,7 @@
           <div class="col-md-12">
             <div class="faq-content text-center">
               <h2>Questions you might have</h2>
-              <p>Need more help? Checkout our<a href="#"> FAQs</a></p>
+              <p>Need more help? Checkout our <a href="#"> FAQ</a></p>
             </div>
           </div>
         </div>
