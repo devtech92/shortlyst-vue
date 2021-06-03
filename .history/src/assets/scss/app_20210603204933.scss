@@ -2484,13 +2484,6 @@ footer {
   }
 }
 @media (max-width: 767px) {
-  .main-menu > ul > li {
-    width: 100%;
-    border-bottom: 1px solid #cecece;
-  }
-  .pricing-faq .faq-content h2 {
-    margin-bottom: 20px;
-  }
   .reach-image {
     margin-top: 20px;
   }
@@ -2727,7 +2720,7 @@ footer {
     
     width: 100%;
     left: 0;
-    background-color: #fff;
+    background-color: #0085ff;
     z-index: 9;
     top: 50px;
   }

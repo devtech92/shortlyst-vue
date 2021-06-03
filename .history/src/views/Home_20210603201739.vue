@@ -73,7 +73,7 @@
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/home_logo5.png" class="fixed-size-img" />
+              <img src="@/assets/images/home_logo5.p" class="fixed-size-img" />
             </div>
           </div>
           <!-- <carousel

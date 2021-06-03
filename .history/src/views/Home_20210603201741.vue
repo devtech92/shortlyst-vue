@@ -63,17 +63,17 @@
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/home_logo3.png" class="fixed-size-img" />
+              <img src="@/assets/images/home_logo3.pn" class="fixed-size-img" />
             </div>
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/home_logo4.png" class="fixed-size-img" />
+              <img src="@/assets/images/home_logo4.svg" class="fixed-size-img" />
             </div>
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/home_logo5.png" class="fixed-size-img" />
+              <img src="@/assets/images/home_logo5.svg" class="fixed-size-img" />
             </div>
           </div>
           <!-- <carousel

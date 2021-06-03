@@ -40,7 +40,7 @@
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/home_logo1.png" class="fixed-size-img" />
+              <img src="@/assets/images/pricing1_logo.png" class="fixed-size-img" />
             </div>
             <div
               class="brand-img"

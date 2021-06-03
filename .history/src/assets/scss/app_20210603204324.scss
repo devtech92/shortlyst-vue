@@ -2484,24 +2484,11 @@ footer {
   }
 }
 @media (max-width: 767px) {
-  .main-menu > ul > li {
-    width: 100%;
-    border-bottom: 1px solid #cecece;
-  }
-  .pricing-faq .faq-content h2 {
-    margin-bottom: 20px;
-  }
-  .reach-image {
-    margin-top: 20px;
-  }
   .brand-trust .main-title{
     margin-bottom: 0;
   }
   .btn-blue-start{
     padding: 8px 20px;
-  }
-  .reach-row .row {
-    margin: 20px 0;
   }
   .main-title h4 br, .reach-content h4 br,
   .reach-content p br{
@@ -2601,7 +2588,7 @@ footer {
     margin-bottom: 5px;
   }
   .your-reach {
-    padding: 20px 0 20px 0;
+    padding: 50px 0 50px 0;
   }
   .reach-row .row:nth-child(2n + 1) .col-md-6:last-child {
     padding-left: 0;
@@ -2727,7 +2714,7 @@ footer {
     
     width: 100%;
     left: 0;
-    background-color: #fff;
+    background-color: #0085ff;
     z-index: 9;
     top: 50px;
   }
@@ -2739,7 +2726,7 @@ footer {
     margin-left: 0;
   }
   .main-menu ul li a {
-    color: #0085ff;
+    color: #ffff;
     padding: 10px;
   }
   .container-fluid {

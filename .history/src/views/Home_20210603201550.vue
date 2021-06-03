@@ -58,22 +58,22 @@
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/home_logo2.png" class="fixed-size-img" />
+              <img src="@/assets/images/home_logo2.svg" class="fixed-size-img" />
             </div>
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/home_logo3.png" class="fixed-size-img" />
+              <img src="@/assets/images/logo3.svg" class="fixed-size-img" />
             </div>
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/home_logo4.png" class="fixed-size-img" />
+              <img src="@/assets/images/logo4.svg" class="fixed-size-img" />
             </div>
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/home_logo5.png" class="fixed-size-img" />
+              <img src="@/assets/images/logo5.svg" class="fixed-size-img" />
             </div>
           </div>
           <!-- <carousel

@@ -361,6 +361,11 @@ export default {
             "We have 2 pricing plans - Shortlyst Pro and Shortlyst Enterprise. We offer monthly and annually billing options for paid plans. The monthly billing plan gives you the flexibility to pay month-to-month. The annual billing plan is a discounted option that requires an upfront payment for an entire year. For more details, please Contact Sales.",
         },
         {
+          title: "How does Shortlyst differ from other tools?",
+          contents:
+            "In Shortlyst we pride ourselves in being every recruiter’s handy tool. We want you to hire the best team with the least amount of effort required. Hence we do not hide any talents from our database in your search results! We even help you automate your efforts in building relationships with the talents you want.",
+        },
+        {
           title: "What is a contact credit?",
           contents:
             "A contact credit is used to reveal premium information such as contact details of talent profiles. 1 contact credit = 1 profile contact reveal                                         A credit will be deducted from your quota each time you click on the hidden contact and it will remain unlocked for future sessions.",

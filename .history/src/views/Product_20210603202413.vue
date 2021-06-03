@@ -40,27 +40,32 @@
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/home_logo1.png" class="fixed-size-img" />
+              <img src="@/assets/images/pricing1_logo.png" class="fixed-size-img" />
             </div>
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/home_logo2.png" class="fixed-size-img" />
+              <img src="@/assets/images/pricing2_logo.png" class="fixed-size-img" />
             </div>
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/home_logo3.png" class="fixed-size-img" />
+              <img src="@/assets/images/pricing3_logo.png" class="fixed-size-img" />
             </div>
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/home_logo4.png" class="fixed-size-img" />
+              <img src="@/assets/images/pricing4_logo.png" class="fixed-size-img" />
             </div>
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/home_logo5.png" class="fixed-size-img" />
+              <img src="@/assets/images/pricing5_logo.png" class="fixed-size-img" />
+            </div>
+            <div
+              class="brand-img"
+            >
+              <img src="@/assets/images/pricing5_logo.png" class="fixed-size-img" />
             </div>
           </div>
         <!-- <carousel

@@ -359,7 +359,7 @@ export default {
           title: "What are the payment options?",
           contents:
             "We have 2 pricing plans - Shortlyst Pro and Shortlyst Enterprise. We offer monthly and annually billing options for paid plans. The monthly billing plan gives you the flexibility to pay month-to-month. The annual billing plan is a discounted option that requires an upfront payment for an entire year. For more details, please Contact Sales.",
-        },
+        }
         {
           title: "What is a contact credit?",
           contents:

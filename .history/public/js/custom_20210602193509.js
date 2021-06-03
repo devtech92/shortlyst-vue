@@ -69,7 +69,7 @@ $(document).ready(function () {
   //     $(this).find("h5").addClass("active");
   //   }
   // });
-  // $(".manu-btn").click(function () {
-  //   $(".main-menu").slideToggle();
-  // });
+  $(".manu-btn").click(function () {
+    $(".main-menu").slideToggle();
+  });
 });
