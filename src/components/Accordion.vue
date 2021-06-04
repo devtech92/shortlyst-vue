@@ -2,11 +2,11 @@
   <div>
     <div
       class="accordian-tabs"
-      v-b-toggle="`accordion-${index}`"
+     
       v-for="(item, index) in items"
       :key="index"
     >
-      <div class="accordion_head">
+      <!-- <div class="accordion_head">
         <h5>
           {{ item.title }}
           <span class="plusminus">
@@ -14,24 +14,25 @@
           </span>
         </h5>
       </div>
-      <b-collapse
-        :id="`accordion-${index}`"
-        accordion="my-accordion"
-        role="tabpanel"
-      >
+      <b-collapse :id="`accordion-${index}`">
         <div class="accordion_body">
-          <p>
-            {{ item.contents }}
-          </p>
+          <p v-html="item.contents"></p>
         </div>
-      </b-collapse>
+      </b-collapse> -->
+      <accordion-item :id="`accordion-${index}`">
+        <template slot="title">{{item.title}}</template>
+        <div v-html="item.contents"></div>
+      </accordion-item>
     </div>
   </div>
 </template>
 
 <script>
+import AccordionItem from "./AccordionItem.vue";
 export default {
+  components: { AccordionItem },
   props: ["items"],
 };
 </script>
 
+    

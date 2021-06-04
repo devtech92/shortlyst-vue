@@ -1547,6 +1547,7 @@ input:checked + .slider:before {
 // }
 .banner-row h1 span {
   color: #0085ff;
+  text-align: center;
 }
 .brand-slider .owl-stage {
   display: flex;
@@ -2598,6 +2599,7 @@ footer {
   .your-reach {
     padding: 20px 0 20px 0;
   }
+  
   .reach-row .row:nth-child(2n + 1) .col-md-6:last-child {
     padding-left: 0;
   }

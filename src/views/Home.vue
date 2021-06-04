@@ -6,7 +6,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="banner-row text-center">
+              <div class="banner-row">
                 <div class="banner-vectores banner-vector">
                   <img src="@/assets/images/banner-vector.png" />
                 </div>
@@ -25,14 +25,14 @@
                 <div class="banner-vectores banner-vector5">
                   <img src="@/assets/images/ellipse.png" />
                 </div>
-                <h1>
-                  Say hello to your ideal<br />
+                <h1 class="text-center">Say hello to your ideal</h1>
+                <h1 class="text-left">
                   new <span>{{ whois[0] }}</span>
                 </h1>
-                <p>
+                <p class="text-center">
                   Lead conversion reimagined, using AI & Automation technology.
                 </p>
-                <router-link to="/contact-sales" class="btn btn-blue mt-2">
+                <router-link to="/contact-sales" class="btn btn-blue mt-2 text-center">
                   Get started for free
                 </router-link>
               </div>

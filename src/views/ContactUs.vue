@@ -8,7 +8,7 @@
             <div class="contact-form">
               <h2>Get in touch <span>with us</span></h2>
             </div>
-            <form action="" class="contact-forms">
+            <form class="contact-forms"  @submit.prevent="sendEmail">
               <div class="vector4">
                 <img src="@/assets/images/contact-us-vector.png" />
               </div>
@@ -21,6 +21,8 @@
                     type="text"
                     class="general-field"
                     placeholder="First name"
+                      name="first_name"
+
                   />
                 </div>
                 <div class="contact-column">
@@ -28,14 +30,18 @@
                     type="text"
                     class="general-field"
                     placeholder="Last name"
+                      name="last_name"
+
                   />
                 </div>
               </div>
               <div class="form-rows">
                 <input
-                  type="text"
+                  type="email"
                   class="general-field"
                   placeholder="Work Email"
+                    name="email"
+
                 />
               </div>
               <div class="form-rows">
@@ -43,21 +49,33 @@
                   type="text"
                   class="general-field"
                   placeholder="Phone number"
+                    name="phone_number"
+
                 />
               </div>
               <div class="form-rows">
-                <select>
-                  <option>Subject</option>
-                </select>
+                <select name="subject">
+                    <option>Subject</option>
+                    <option>I’m interested in purchasing a product</option>
+                    <option>
+                      I want to learn more about a product or a feature
+                    </option>
+                    <option>
+                      I need setup help or have a technical question
+                    </option>
+                    <option>Other</option>
+                  </select>
               </div>
               <div class="form-rows">
                 <textarea
                   class="details-msg"
                   placeholder="How can we help you?"
+                    name="message"
+
                 ></textarea>
               </div>
               <div class="form-rows">
-                <button class="btn btn-blue">Submit</button>
+                <button class="btn btn-blue" type="submit">Submit</button>
               </div>
             </form>
           </div>
@@ -134,7 +152,7 @@
 
 
 <script>
-// @ is an alias to /src
+import emailjs from "emailjs-com";
 
 import DefaultLayout from "@/components/layouts/DefaultLayout.vue";
 
@@ -147,6 +165,27 @@ export default {
     this.$emit(`update:layout`, DefaultLayout);
   },
   mounted() {},
+  methods: {
+    sendEmail(e) {
+      //TODO: emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+      emailjs
+        .sendForm(
+          "service_4z6hl0r",
+          "template_mrd0di5",
+          e.target,
+          "user_4tVpKl3PomR3wGpPK73Uz"
+        )
+        .then(
+          (result) => {
+            console.log("Email sent successfuly!", result.status, result.text);
+            this.$router.push("/contact-success");
+          },
+          (error) => {
+            console.log("FAILED...", error);
+          }
+        );
+    },
+  },
 };
 </script>
 
