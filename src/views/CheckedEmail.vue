@@ -32,7 +32,7 @@
             <div class="contacts-sales">
               <div class="salse-title">
                 <h3>Check your email </h3>
-                <p>We have send an email with further instructions to <br/> text@gamil.com. clickthe link to confirm <br/> your email address and get started.</p>
+                <p>We have send an email with further instructions to <br/> text@gamil.com. click the link to confirm <br/> your email address and get started.</p>
                 <p class="mt-2">Wrong email ? <a href="">re-enter your email address</a></p>
               </div>
             </div>
@@ -50,7 +50,7 @@
 import GuestLayout from "@/components/layouts/GuestLayout.vue";
 
 export default {
-  name: "ForgotPassword",
+  name: "CheckedEmail",
   components: {
     // ,
   },
