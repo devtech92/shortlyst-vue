@@ -2475,24 +2475,7 @@ footer {
   .banner-vector {
     left: 0;
     top: 0;
-  
-  }
-  .banner-vector1 {
-    left: 0;
-    top: auto;
-    bottom: 0;
-  }
-  .banner-vector3 {
-    top: 0;
-  }
-  .banner-vector4 {
-    right: 0;
-    top: 0;
-  }
-  .banner-vector6 {
-    right: 0;
-    bottom: 0;
-  }
+}
   .banner-row.inner-banner-content {
     padding: 0;
     margin-top: 0px;
@@ -2705,7 +2688,7 @@ footer {
     font-size: 20px;
   }
   .brand-slider.brand-images .brand-img {
-    width: 50%;
+    width: auto;
     // min-width: max-content;
     // margin-right: 0;
     padding: 0px;

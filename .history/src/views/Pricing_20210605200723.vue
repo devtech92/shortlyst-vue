@@ -30,7 +30,7 @@
                   <input type="checkbox" id="togBtn" />
                   <div class="slider round"></div>
                 </label>
-                <h6>Bill annually</h6>
+                <h6>Bill Annually</h6>
                 <img src="@/assets/images/save-20.png" class="save-imgs" />
               </div> 
             </div>

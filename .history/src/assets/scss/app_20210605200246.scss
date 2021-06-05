@@ -1115,7 +1115,7 @@ input:checked + .slider:before {
 }
 .bill-annualy h6 {
   color: #fff;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
 }
 .our-brand {
@@ -2003,10 +2003,6 @@ footer {
   width: 160px;
   top: 44%;
 }
-.banner-row.inner-banner-content {
-  padding: 0;
-  margin-top: 90px;
-}
 .login-manu ul li:last-child a:hover,
 .btn-login:hover,
 .btn-blue:hover {
@@ -2469,34 +2465,6 @@ footer {
   }
 }
 @media (max-width: 767px) {
-  .banner-vectores {
-    max-width: 80px;
-  }
-  .banner-vector {
-    left: 0;
-    top: 0;
-  
-  }
-  .banner-vector1 {
-    left: 0;
-    top: auto;
-    bottom: 0;
-  }
-  .banner-vector3 {
-    top: 0;
-  }
-  .banner-vector4 {
-    right: 0;
-    top: 0;
-  }
-  .banner-vector6 {
-    right: 0;
-    bottom: 0;
-  }
-  .banner-row.inner-banner-content {
-    padding: 0;
-    margin-top: 0px;
-  }
   .mobile-menus ul li,.mobile-menus ul li a {
     width: 100%;
     text-align: center;
@@ -2705,7 +2673,7 @@ footer {
     font-size: 20px;
   }
   .brand-slider.brand-images .brand-img {
-    width: 50%;
+    width: auto;
     // min-width: max-content;
     // margin-right: 0;
     padding: 0px;
