@@ -2465,33 +2465,8 @@ footer {
   }
 }
 @media (max-width: 767px) {
-  .mobile-menus ul li,.mobile-menus ul li a {
-    width: 100%;
-    text-align: center;
-    display: block;
-  }
-  .mobile-menus ul {
-    flex-direction: column-reverse!important;
-  }
-  .login-manu ul li:last-child {
-    // box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
-    width: 94%;
-    margin: 0 auto;
-  }
-  .brand-slider.brand-images .brand-img {
-    padding: 10px;
-  }
-  .brand-trust.our-brand .main-title {
-      margin-bottom: 50px;
-  }
-  .faq-content {
-      margin-bottom: 50px!important;
-  }
   .pricing-faq .vector2,
-  .pricing-faq .vector1,
-  .pricing-faq .vector3{
-    display: none;
-  }
+  .pricing-faq .vector1
   .reach-row .main-title {
     margin-bottom: 60px;
   }
@@ -2500,10 +2475,10 @@ footer {
   }
   .main-menu > ul > li {
     width: 100%;
-    // border-bottom: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
   }
   .pricing-faq .faq-content h2 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .reach-image {
     margin-top: 20px;
@@ -2747,9 +2722,7 @@ footer {
     left: 0;
     background-color: #fff;
     z-index: 9;
-    top: 70px;
-    border-top: 1px solid #f8f4f4;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    top: 50px;
   }
   .main-menu ul{
     flex-direction: column;
@@ -2770,14 +2743,12 @@ footer {
     margin-left: 0;
   }
   .sr-onlys {
-    width: 30px;
+    width: 50px;
     height: 2px;
     background-color: #0085ff;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
   }
-  .manu-btn .sr-onlys:last-child {
-    margin-bottom: 0;
-  }
+
   .manu-btn {
     display: flex;
     flex-direction: column;

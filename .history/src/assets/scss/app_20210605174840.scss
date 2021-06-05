@@ -2471,7 +2471,7 @@ footer {
     display: block;
   }
   .mobile-menus ul {
-    flex-direction: column-reverse!important;
+    flex-direction: column-reverse!importan;
   }
   .login-manu ul li:last-child {
     // box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
@@ -2749,7 +2749,6 @@ footer {
     z-index: 9;
     top: 70px;
     border-top: 1px solid #f8f4f4;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   }
   .main-menu ul{
     flex-direction: column;
