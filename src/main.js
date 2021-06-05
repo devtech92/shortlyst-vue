@@ -4,6 +4,15 @@ import router from "./router";
 
 // plugins
 import { BootstrapVue } from "bootstrap-vue";
+import * as VueGoogleMaps from "vue2-google-maps";
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: "AIzaSyBKyWhqQNXE7EDnOK652vrtKi0IgcxfiYI", //TODO: use your business key
+    libraries: "places",
+  },
+});
+
 Vue.use(BootstrapVue);
 
 // import LoadScript from "vue-plugin-load-script";

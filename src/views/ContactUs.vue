@@ -8,7 +8,7 @@
             <div class="contact-form">
               <h2>Get in touch <span>with us</span></h2>
             </div>
-            <form class="contact-forms"  @submit.prevent="sendEmail">
+            <form class="contact-forms" @submit.prevent="sendEmail">
               <div class="vector4">
                 <img src="@/assets/images/contact-us-vector.png" />
               </div>
@@ -21,8 +21,7 @@
                     type="text"
                     class="general-field"
                     placeholder="First name"
-                      name="first_name"
-
+                    name="first_name"
                   />
                 </div>
                 <div class="contact-column">
@@ -30,8 +29,7 @@
                     type="text"
                     class="general-field"
                     placeholder="Last name"
-                      name="last_name"
-
+                    name="last_name"
                   />
                 </div>
               </div>
@@ -40,8 +38,7 @@
                   type="email"
                   class="general-field"
                   placeholder="Work Email"
-                    name="email"
-
+                  name="email"
                 />
               </div>
               <div class="form-rows">
@@ -49,29 +46,27 @@
                   type="text"
                   class="general-field"
                   placeholder="Phone number"
-                    name="phone_number"
-
+                  name="phone_number"
                 />
               </div>
               <div class="form-rows">
                 <select name="subject">
-                    <option>Subject</option>
-                    <option>I’m interested in purchasing a product</option>
-                    <option>
-                      I want to learn more about a product or a feature
-                    </option>
-                    <option>
-                      I need setup help or have a technical question
-                    </option>
-                    <option>Other</option>
-                  </select>
+                  <option>Subject</option>
+                  <option>I’m interested in purchasing a product</option>
+                  <option>
+                    I want to learn more about a product or a feature
+                  </option>
+                  <option>
+                    I need setup help or have a technical question
+                  </option>
+                  <option>Other</option>
+                </select>
               </div>
               <div class="form-rows">
                 <textarea
                   class="details-msg"
                   placeholder="How can we help you?"
-                    name="message"
-
+                  name="message"
                 ></textarea>
               </div>
               <div class="form-rows">
@@ -81,65 +76,102 @@
           </div>
           <div class="col-md-5">
             <div class="contact-details-row">
-            <div class="map">
-              <img src="@/assets/images/map1.png" />
-            </div>
-            <div class="contact-details">
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Indonesia</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Singapore</a>
-                </li>
-              
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                  <div class="contact-headers">
-                    <h6>PT. SHORLYST LABS INTERNATIONAL</h6>
-                    <p>Wisma BNI 46, Lt 45</p>
-                    <p>Jl. Jend. Sudirman No. Kav. 1, RT.10/RW.11 Karet Tengsin, Tanahabang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220</p>
+              <div class="map">
+                <GmapMap
+                  :center="mapCenter"
+                  :zoom="12"
+                  style="width: 100%; height: 600px"
+                >
+                  <GmapMarker
+                    :position="mapCenter"
+                    @click="mapCenter = mapCenter"
+                  />
+                </GmapMap>
+                <img src="@/assets/images/map1.png" />
+              </div>
+              <div class="contact-details">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      id="home-tab"
+                      data-toggle="tab"
+                      href="#home"
+                      role="tab"
+                      aria-controls="home"
+                      aria-selected="true"
+                      >Indonesia</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      id="profile-tab"
+                      data-toggle="tab"
+                      href="#profile"
+                      role="tab"
+                      aria-controls="profile"
+                      aria-selected="false"
+                      >Singapore</a
+                    >
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="home"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                  >
+                    <div class="contact-headers">
+                      <h6>PT. SHORLYST LABS INTERNATIONAL</h6>
+                      <p>Wisma BNI 46, Lt 45</p>
+                      <p>
+                        Jl. Jend. Sudirman No. Kav. 1, RT.10/RW.11 Karet
+                        Tengsin, Tanahabang, Kota Jakarta Pusat, Daerah Khusus
+                        Ibukota Jakarta 10220
+                      </p>
+                    </div>
+                    <div class="contacts-footer">
+                      <ul>
+                        <li>
+                          <a href="#"> business@shorlyst.ai </a>
+                        </li>
+                        <li>
+                          <a href="#"> support@shorlyst.ai </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="contacts-footer">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          business@shorlyst.ai
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          support@shorlyst.ai
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                  <div class="contact-headers">
-                    <h6>PT. SHORLYST LABS INTERNATIONAL</h6>
-                    <p>Wisma BNI 46, Lt 45</p>
-                    <p>Jl. Jend. Sudirman No. Kav. 1, RT.10/RW.11 Karet Tengsin, Tanahabang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220</p>
-                  </div>
-                  <div class="contacts-footer">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          business@shorlyst.ai
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          support@shorlyst.ai
-                        </a>
-                      </li>
-                    </ul>
+                  <div
+                    class="tab-pane fade"
+                    id="profile"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab"
+                  >
+                    <div class="contact-headers">
+                      <h6>PT. SHORLYST LABS INTERNATIONAL</h6>
+                      <p>Wisma BNI 46, Lt 45</p>
+                      <p>
+                        Jl. Jend. Sudirman No. Kav. 1, RT.10/RW.11 Karet
+                        Tengsin, Tanahabang, Kota Jakarta Pusat, Daerah Khusus
+                        Ibukota Jakarta 10220
+                      </p>
+                    </div>
+                    <div class="contacts-footer">
+                      <ul>
+                        <li>
+                          <a href="#"> business@shorlyst.ai </a>
+                        </li>
+                        <li>
+                          <a href="#"> support@shorlyst.ai </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
             <div class="vector3">
               <img src="@/assets/images/contact-us-vector2.png" />
             </div>
@@ -160,6 +192,11 @@ export default {
   name: "ContactUs",
   components: {
     // ,
+  },
+  data() {
+    return {
+      mapCenter: { lat: 40.72158448684192, lng: -74.04797359538375 },
+    };
   },
   created() {
     this.$emit(`update:layout`, DefaultLayout);
