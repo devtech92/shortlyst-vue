@@ -71,15 +71,15 @@
                     <img
                       src="@/assets/images/green-check.png"
                       class="mr-2"
-                    />100 LinkedIn reach outs/acc/week
+                    />100 Linkedin reach outs/week
                   </li>
                   <li>
                     <img src="@/assets/images/green-check.png" class="mr-2" />50
-                    100 contact credits/acc/mo
+                    contact reveal/month
                   </li>
                   <li>
                     <img src="@/assets/images/green-check.png" class="mr-2" />10
-                    10 active projects
+                    active jobs
                   </li>
                 </ul>
               </div>
@@ -99,7 +99,7 @@
               </div>
               <div class="pricing-body">
                 <ul>
-                  <li>Everything in Pro, plus:</li>
+                  <li>Everything in Pro, plus</li>
                   <li>
                     <img
                       src="@/assets/images/blue-check.png"
@@ -110,18 +110,7 @@
                     <img
                       src="@/assets/images/blue-check.png"
                       class="mr-2"
-                    />Unlimited active projects
-                  </li>
-                  <li>
-                    <img
-                      src="@/assets/images/blue-check.png"
-                      class="mr-2"
-                    />100 LinkedIn reach outs/acc/week
-                  </li>
-
-                  <li>
-                    <img src="@/assets/images/blue-check.png" class="mr-2" />
-                    100 contact credits/acc/mo
+                    />Unlimited active jobs
                   </li>
                   <li>
                     <img
@@ -129,23 +118,16 @@
                       class="mr-2"
                     />Collaboration features
                   </li>
+
                   <li>
-                    <img
-                      src="@/assets/images/blue-check.png"
-                      class="mr-2"
-                    />Team management
+                    <img src="@/assets/images/blue-check.png" class="mr-2" />
+                    100 contact reveal/month
                   </li>
                   <li>
                     <img
                       src="@/assets/images/blue-check.png"
                       class="mr-2"
                     />Dedicated account manager
-                  </li>
-                  <li>
-                    <img
-                      src="@/assets/images/blue-check.png"
-                      class="mr-2"
-                    />	One-Way Applicant Tracking System Integration
                   </li>
                 </ul>
               </div>
@@ -158,7 +140,7 @@
       </div>
     </section>
 
-    <section class="brand-trust our-brand pricing-logo">
+    <section class="brand-trust our-brand">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -167,7 +149,7 @@
             </div>
           </div>
         </div>
-        <div class="brand-slider  pricing-logo">
+        <div class="brand-slider brand-images">
           <div
               class="brand-img"
             >
@@ -191,19 +173,23 @@
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/pricing6_logo.png" class="fixed-size-img" />
+              <img src="@/assets/images/pricing5_logo.png" class="fixed-size-img" />
             </div>
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/pricing5_logo.png" class="fixed-size-img" />
+              <img src="@/assets/images/pricing6_logo.png" class="fixed-size-img" />
             </div>
             <div
               class="brand-img"
             >
               <img src="@/assets/images/pricing7_logo.png" class="fixed-size-img" />
             </div>
-          
+            <div
+              class="brand-img"
+            >
+              <img src="@/assets/images/pricing8_logo.png" class="fixed-size-img" />
+            </div>
             <div
               class="brand-img"
             >

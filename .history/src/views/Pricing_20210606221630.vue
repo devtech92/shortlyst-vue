@@ -116,36 +116,18 @@
                     <img
                       src="@/assets/images/blue-check.png"
                       class="mr-2"
-                    />100 LinkedIn reach outs/acc/week
+                    />Collaboration features
                   </li>
 
                   <li>
                     <img src="@/assets/images/blue-check.png" class="mr-2" />
-                    100 contact credits/acc/mo
-                  </li>
-                  <li>
-                    <img
-                      src="@/assets/images/blue-check.png"
-                      class="mr-2"
-                    />Collaboration features
-                  </li>
-                  <li>
-                    <img
-                      src="@/assets/images/blue-check.png"
-                      class="mr-2"
-                    />Team management
+                    100 contact reveal/month
                   </li>
                   <li>
                     <img
                       src="@/assets/images/blue-check.png"
                       class="mr-2"
                     />Dedicated account manager
-                  </li>
-                  <li>
-                    <img
-                      src="@/assets/images/blue-check.png"
-                      class="mr-2"
-                    />	One-Way Applicant Tracking System Integration
                   </li>
                 </ul>
               </div>
@@ -158,7 +140,7 @@
       </div>
     </section>
 
-    <section class="brand-trust our-brand pricing-logo">
+    <section class="brand-trust our-brand">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -167,7 +149,7 @@
             </div>
           </div>
         </div>
-        <div class="brand-slider  pricing-logo">
+        <div class="brand-slider brand-images">
           <div
               class="brand-img"
             >
@@ -191,19 +173,23 @@
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/pricing6_logo.png" class="fixed-size-img" />
+              <img src="@/assets/images/pricing5_logo.png" class="fixed-size-img" />
             </div>
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/pricing5_logo.png" class="fixed-size-img" />
+              <img src="@/assets/images/pricing6_logo.png" class="fixed-size-img" />
             </div>
             <div
               class="brand-img"
             >
               <img src="@/assets/images/pricing7_logo.png" class="fixed-size-img" />
             </div>
-          
+            <div
+              class="brand-img"
+            >
+              <img src="@/assets/images/pricing8_logo.png" class="fixed-size-img" />
+            </div>
             <div
               class="brand-img"
             >

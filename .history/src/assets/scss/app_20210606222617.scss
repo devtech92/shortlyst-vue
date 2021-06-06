@@ -2472,25 +2472,7 @@ footer {
   position: relative;
   top: 5px;
 }
-.pricing-logo .brand-img:nth-child(5) {
-  position: relative;
-  top: 40px;
-}
 
-.pricing-logo .brand-img:nth-child(7) {
-  position: relative;
-  top: 13px;
-}
-
-.pricing-logo .brand-img:nth-child(8) {
-  position: relative;
-  top: 26px;
-}
-.pricing-logo .brand-img:nth-child(8) img{
-  width: 80%;
-}
-
-.brand-img {}
 .brand-slider.pricing-logo .brand-img {width: calc(100% / 4);padding: 10px;}
 @media (max-width: 1152px) {
   .banner-vector3 {
@@ -2736,7 +2718,7 @@ footer {
     font-size: 15px;
   }
   .main-title h6{
-    font-size: 16px;
+    font-size: 25px;
   }
   .brand-slider{
     margin-top: 30px;
@@ -2947,7 +2929,7 @@ footer {
   }
 
   .main-header .col-md-6 {
-    max-width: 50%;
+    width: 50%;
     position: unset;
   }
 

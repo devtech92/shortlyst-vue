@@ -167,7 +167,7 @@
             </div>
           </div>
         </div>
-        <div class="brand-slider  pricing-logo">
+        <div class="brand-slider brand-images ">
           <div
               class="brand-img"
             >
@@ -191,19 +191,23 @@
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/pricing6_logo.png" class="fixed-size-img" />
+              <img src="@/assets/images/pricing5_logo.png" class="fixed-size-img" />
             </div>
             <div
               class="brand-img"
             >
-              <img src="@/assets/images/pricing5_logo.png" class="fixed-size-img" />
+              <img src="@/assets/images/pricing6_logo.png" class="fixed-size-img" />
             </div>
             <div
               class="brand-img"
             >
               <img src="@/assets/images/pricing7_logo.png" class="fixed-size-img" />
             </div>
-          
+            <div
+              class="brand-img"
+            >
+              <img src="@/assets/images/pricing8_logo.png" class="fixed-size-img" />
+            </div>
             <div
               class="brand-img"
             >
