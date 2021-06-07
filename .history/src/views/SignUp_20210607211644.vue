@@ -100,7 +100,7 @@
             </div>
             <div class="form-rows">
               <p>
-                By clicking Sign Up, you agree to our
+                By clicking Sign In, you agree to our
                 <router-link to="/terms">Term of Services</router-link> and
                 <router-link to="/privacy">Privacy Policy</router-link>
               </p>

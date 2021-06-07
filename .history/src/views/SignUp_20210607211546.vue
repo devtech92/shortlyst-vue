@@ -44,11 +44,11 @@
               <input
                 type="text"
                 class="general-field"
-                placeholder="Full Name  *"
+                placeholder=""
               />
-              <!-- <span class="placeholder">
-                  <b class="important" style="color: red">*</b>
-                </span> -->
+              <span class="placeholder">
+                  Full Name <b class="important" style="color: red">*</b>
+                </span>
               </div>
             </div>
             <div class="form-rows">
@@ -64,7 +64,7 @@
               <input
                 type="password"
                 class="general-field"
-                placeholder="Password *"
+                placeholder="Password"
               />
               <!-- <span class="placeholder">
                   Password<b class="important" style="color: red">*</b>
@@ -76,11 +76,11 @@
               <input
                 type="password"
                 class="general-field"
-                placeholder="Confirm Password *"
+                placeholder=""
               />
-              <!-- <span class="placeholder">
+              <span class="placeholder">
                   Confirm Password<b class="important" style="color: red">*</b>
-                </span> -->
+                </span>
               </div>
             </div>
             <div class="form-rows">
@@ -88,11 +88,11 @@
               <input
                 type="text"
                 class="general-field"
-                placeholder="Phone number *"
+                placeholder=""
               />
-              <!-- <span class="placeholder">
+              <span class="placeholder">
                   Phone number<b class="important" style="color: red"></b>
-                </span> -->
+                </span>
               </div>
             </div>
             <div class="form-rows">
@@ -100,7 +100,7 @@
             </div>
             <div class="form-rows">
               <p>
-                By clicking Sign Up, you agree to our
+                By clicking Sign In, you agree to our
                 <router-link to="/terms">Term of Services</router-link> and
                 <router-link to="/privacy">Privacy Policy</router-link>
               </p>

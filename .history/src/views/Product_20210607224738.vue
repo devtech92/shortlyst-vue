@@ -1,6 +1,5 @@
 <template>
   <main>
-    <div class="empty-header"></div>
     <section class="main-banner product-banner">
       <div class="container">
         <div class="row">
@@ -104,7 +103,7 @@
          -->
       </div>
     </section>
-    <section class="your-reach producr-reach">
+    <section class="your-reach producr-react">
       <div class="container">
         <div class="reach-row">
           <div class="row">

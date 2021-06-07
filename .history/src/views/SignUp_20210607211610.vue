@@ -44,11 +44,11 @@
               <input
                 type="text"
                 class="general-field"
-                placeholder="Full Name  *"
+                placeholder=""
               />
-              <!-- <span class="placeholder">
-                  <b class="important" style="color: red">*</b>
-                </span> -->
+              <span class="placeholder">
+                  Full Name <b class="important" style="color: red">*</b>
+                </span>
               </div>
             </div>
             <div class="form-rows">
@@ -100,7 +100,7 @@
             </div>
             <div class="form-rows">
               <p>
-                By clicking Sign Up, you agree to our
+                By clicking Sign In, you agree to our
                 <router-link to="/terms">Term of Services</router-link> and
                 <router-link to="/privacy">Privacy Policy</router-link>
               </p>

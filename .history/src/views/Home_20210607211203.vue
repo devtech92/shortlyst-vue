@@ -49,7 +49,7 @@
               </div>
             </div>
           </div>
-          <div class="brand-slider brand-images" style="margin-bottom:50px">
+          <div class="brand-slider brand-images" style="margin-bottom:5">
             <div
               class="brand-img"
             >

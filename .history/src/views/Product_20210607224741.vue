@@ -1,6 +1,5 @@
 <template>
   <main>
-    <div class="empty-header"></div>
     <section class="main-banner product-banner">
       <div class="container">
         <div class="row">

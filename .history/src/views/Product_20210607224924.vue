@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="empty-header"></div>
+    .empty-
     <section class="main-banner product-banner">
       <div class="container">
         <div class="row">
