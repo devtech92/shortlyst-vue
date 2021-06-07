@@ -80,7 +80,7 @@
                 <GmapMap
                   :center="mapCenter"
                   :zoom="12"
-                  style="width: 100%; height: 600px"
+                  style="width: 100%;"
                 >
                   <gmap-info-window
                     :opened="infoOpened"
@@ -101,7 +101,6 @@
                     @click="mapCenter = mapCenter"
                   />
                 </GmapMap>
-                <img src="@/assets/images/map1.png" />
               </div>
               <div class="contact-details">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
