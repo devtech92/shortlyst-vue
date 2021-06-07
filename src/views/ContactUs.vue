@@ -82,6 +82,20 @@
                   :zoom="12"
                   style="width: 100%;"
                 >
+                  <gmap-info-window
+                    :opened="infoOpened"
+                    @closeclick="infoOpened = false"
+                    :position="mapCenter"
+                    :options="{
+                      pixelOffset: {
+                        width: 0,
+                        height: -35,
+                      },
+                    }"
+                  >
+                    Lorem, ipsum dolor.
+                  </gmap-info-window>
+
                   <GmapMarker
                     :position="mapCenter"
                     @click="mapCenter = mapCenter"
@@ -195,6 +209,16 @@ export default {
   data() {
     return {
       mapCenter: { lat: 40.72158448684192, lng: -74.04797359538375 },
+      infoPosition: null,
+      infoContent: null,
+      infoOpened: false,
+      infoCurrentKey: null,
+      infoOptions: {
+        pixelOffset: {
+          width: 0,
+          height: -35,
+        },
+      },
     };
   },
   created() {
