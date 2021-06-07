@@ -26,7 +26,7 @@ const routes = [
     component: () => import("../views/ForgotPassword.vue"),
   },
   {
-    path: "/Checked-email",
+    path: "/checked-email",
     name: "CheckedEmail",
     component: () => import("../views/CheckedEmail.vue"),
   },
@@ -41,14 +41,14 @@ const routes = [
     component: () => import("../views/PasswordUpdate.vue"),
   },
   {
-    path: "/complete-registeration",
-    name: "CompleteRegisteration",
-    component: () => import("../views/CompleteRegisteration.vue"),
+    path: "/complete-registration",
+    name: "CompleteRegistration",
+    component: () => import("../views/CompleteRegistration.vue"),
   },
   {
-    path: "/email-verifed",
-    name: "EmailVerifed",
-    component: () => import("../views/EmailVerifed.vue"),
+    path: "/email-verified",
+    name: "EmailVerified",
+    component: () => import("../views/EmailVerified.vue"),
   },
   {
     path: "/product",
