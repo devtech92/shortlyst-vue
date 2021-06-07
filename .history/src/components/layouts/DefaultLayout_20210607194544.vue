@@ -82,7 +82,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="copyright-msg">
-              <p>Copyright 2021© Shortlyst.ai Develop by  GMITS TECH DUBAI </p>
+              <p>Copyright 2021© Shortlyst.ai Develop by  GMITS TECH DU </p>
             </div>
           </div>
         </div>
