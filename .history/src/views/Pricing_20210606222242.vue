@@ -203,8 +203,13 @@
             >
               <img src="@/assets/images/pricing7_logo.png" class="fixed-size-img" />
             </div>
-          
-          
+            
+            
+            <div
+              class="brand-img"
+            >
+              <img src="@/assets/images/pricing8_logo.png" class="fixed-size-img" />
+            </div>
             <div
               class="brand-img"
             >

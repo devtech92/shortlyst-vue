@@ -204,7 +204,6 @@
               <img src="@/assets/images/pricing7_logo.png" class="fixed-size-img" />
             </div>
           
-          
             <div
               class="brand-img"
             >
