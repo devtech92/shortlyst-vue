@@ -2,9 +2,6 @@
   <section class="login-template">
     <div class="login-row">
       <div class="login-column">
-        <div class="login-logo">
-          <img src="@/assets/images/white-logo.png" />
-        </div>
         <div class="login-vectors login-vector">
           <img src="@/assets/images/login-vector.png" />
         </div>
@@ -28,10 +25,10 @@
       </div>
       <div class="login-column1">
         <div class="sign-up-form">
-          <h3>Sign Up</h3>
+          <h3>Sign In</h3>
           <div class="form-rows">
-            <a href="" class="btn-google">
-              <img src="@/assets/images/google.png" class="mr-2" /> Sign Up with
+            <a href="#" class="btn-google">
+              <img src="@/assets/images/google.png" class="mr-2" /> Sign In with
               Google
             </a>
           </div>
@@ -41,74 +38,43 @@
           <form>
             <div class="form-rows">
               <div class="placeholder-wrap">
-              <input
-                type="text"
-                class="general-field"
-                placeholder="Full Name  *"
-              />
-              <!-- <span class="placeholder">
-                  <b class="important" style="color: red">*</b>
-                </span> -->
-              </div>
-            </div>
-            <div class="form-rows">
-               <div class="placeholder-wrap">
-              <input type="email" class="general-field" placeholder="Email *" />
-              <!-- <span class="placeholder">
+                <input type="email" class="general-field" placeholder="Email *"/>
+                <!-- <span class="placeholder">
                   Email<b class="important" style="color: red">*</b>
                 </span> -->
               </div>
             </div>
+
             <div class="form-rows">
-               <div class="placeholder-wrap">
-              <input
-                type="password"
-                class="general-field"
-                placeholder="Password *"
-              />
-              <!-- <span class="placeholder">
+              <div class="placeholder-wrap">
+                <input type="password" class="general-field" />
+                <span class="placeholder">
                   Password<b class="important" style="color: red">*</b>
-                </span> -->
+                </span>
               </div>
             </div>
+<!-- 
             <div class="form-rows">
-               <div class="placeholder-wrap">
+              <input type="email" class="general-field" placeholder="Email*" />
+            </div>
+            <div class="form-rows">
               <input
                 type="password"
                 class="general-field"
-                placeholder="Confirm Password *"
+                placeholder="Password*"
               />
-              <!-- <span class="placeholder">
-                  Confirm Password<b class="important" style="color: red">*</b>
-                </span> -->
-              </div>
+            </div>
+             -->
+            <div class="form-rows forgot-passwrod">
+              <router-link to="/forgot-password">Forgot your password?</router-link>
             </div>
             <div class="form-rows">
-               <div class="placeholder-wrap">
-              <input
-                type="text"
-                class="general-field"
-                placeholder="Phone number *"
-              />
-              <!-- <span class="placeholder">
-                  Phone number<b class="important" style="color: red"></b>
-                </span> -->
-              </div>
-            </div>
-            <div class="form-rows">
-              <button class="btn btn-login">Sign Up</button>
-            </div>
-            <div class="form-rows">
-              <p>
-                By clicking Sign Up, you agree to our
-                <router-link to="/terms">Term of Services</router-link> and
-                <router-link to="/privacy">Privacy Policy</router-link>
-              </p>
+              <button class="btn btn-login">Sign In</button>
             </div>
             <div class="form-rows">
               <h6>
-                Already have an account?
-                <router-link to="/login">Sign in</router-link>
+                Don't have a Shortlyst account?
+                <router-link to="/sign-up"> Sign up</router-link>
               </h6>
             </div>
           </form>
@@ -125,7 +91,7 @@
 import GuestLayout from "@/components/layouts/GuestLayout.vue";
 
 export default {
-  name: "SignUp",
+  name: "Login",
   components: {
     // ,
   },
@@ -135,6 +101,7 @@ export default {
   mounted() {},
 };
 </script>
+
 <style scoped>
 .placeholder-wrap {
   position: relative;

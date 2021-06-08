@@ -1076,7 +1076,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color:#0085ff;
+  background-color: #2ad4dd;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 34px;
@@ -1097,7 +1097,7 @@ footer {
 }
 
 input:checked + .slider {
-  background-color:  #2ad4dd;
+  background-color: #0085ff;
 }
 
 input:focus + .slider {

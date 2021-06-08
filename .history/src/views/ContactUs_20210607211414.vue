@@ -156,7 +156,7 @@
                       </ul>
                     </div>
                   </div>
-                  <!-- <div
+                  <div
                     class="tab-pane fade"
                     id="profile"
                     role="tabpanel"
@@ -181,7 +181,7 @@
                         </li>
                       </ul>
                     </div>
-                  </div> -->
+                  </div>
                 </div>
               </div>
             </div>
