@@ -1140,6 +1140,11 @@
     anymatch "^3.0.0"
     source-map "^0.6.0"
 
+"@vue-a11y/focus-loop@^0.1.0":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@vue-a11y/focus-loop/-/focus-loop-0.1.2.tgz#29b79aafd761f1a27ca6c8465f1e5f89df9b2d52"
+  integrity sha512-to4AIwIOokv33nQC7yxld76rxi00/pZV1T4GD/oYooht0PQ4v6CB3ahZxag6tEmuuOJkdLTFvFbnl+xWgnlQ2w==
+
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@vue/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-1.2.1.tgz#31624a7a505fb14da1d58023725a4c5f270e6a81"
@@ -8806,6 +8811,13 @@ vue-router@^3.2.0:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.5.1.tgz#edf3cf4907952d1e0583e079237220c5ff6eb6c9"
   integrity sha512-RRQNLT8Mzr8z7eL4p7BtKvRaTSGdCbTy2+Mm5HTJvLGYSSeG9gDzNasJPP/yOYKLy+/cLG/ftrqq5fvkFwBJEw==
+
+vue-social-chat@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/vue-social-chat/-/vue-social-chat-0.1.6.tgz#56034f37166ea82ae7fea73d868d10f955553ce4"
+  integrity sha512-SWJI97U49yFp5syUSWix6FKzDmaUxX9sxeIr55M+WnaPQDaCGK0Hy86iEgCAlgibMK4RQEPB5stzP/f4JMekxQ==
+  dependencies:
+    "@vue-a11y/focus-loop" "^0.1.0"
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.3"

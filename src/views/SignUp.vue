@@ -38,65 +38,73 @@
           <div class="form-rows">
             <p class="or text-center">Or</p>
           </div>
-          <form>
+          <form @submit.prevent="sendEmail">
             <div class="form-rows">
               <div class="placeholder-wrap">
-              <input
-                type="text"
-                class="general-field"
-                placeholder="Full Name  *"
-              />
-              <!-- <span class="placeholder">
+                <input
+                  type="text"
+                  class="general-field"
+                  placeholder="Full Name  *"
+                  name="first_name"
+                />
+                <!-- <span class="placeholder">
                   <b class="important" style="color: red">*</b>
                 </span> -->
               </div>
             </div>
             <div class="form-rows">
-               <div class="placeholder-wrap">
-              <input type="email" class="general-field" placeholder="Email *" />
-              <!-- <span class="placeholder">
+              <div class="placeholder-wrap">
+                <input
+                  type="email"
+                  class="general-field"
+                  placeholder="Email *"
+                  name="email"
+                />
+                <!-- <span class="placeholder">
                   Email<b class="important" style="color: red">*</b>
                 </span> -->
               </div>
             </div>
             <div class="form-rows">
-               <div class="placeholder-wrap">
-              <input
-                type="password"
-                class="general-field"
-                placeholder="Password *"
-              />
-              <!-- <span class="placeholder">
+              <div class="placeholder-wrap">
+                <input
+                  type="password"
+                  class="general-field"
+                  placeholder="Password *"
+                  name="password"
+                />
+                <!-- <span class="placeholder">
                   Password<b class="important" style="color: red">*</b>
                 </span> -->
               </div>
             </div>
             <div class="form-rows">
-               <div class="placeholder-wrap">
-              <input
-                type="password"
-                class="general-field"
-                placeholder="Confirm Password *"
-              />
-              <!-- <span class="placeholder">
+              <div class="placeholder-wrap">
+                <input
+                  type="password"
+                  class="general-field"
+                  placeholder="Confirm Password *"
+                />
+                <!-- <span class="placeholder">
                   Confirm Password<b class="important" style="color: red">*</b>
                 </span> -->
               </div>
             </div>
             <div class="form-rows">
-               <div class="placeholder-wrap">
-              <input
-                type="text"
-                class="general-field"
-                placeholder="Phone number *"
-              />
-              <!-- <span class="placeholder">
+              <div class="placeholder-wrap">
+                <input
+                  type="text"
+                  class="general-field"
+                  placeholder="Phone number *"
+                  name="phone_number"
+                />
+                <!-- <span class="placeholder">
                   Phone number<b class="important" style="color: red"></b>
                 </span> -->
               </div>
             </div>
             <div class="form-rows">
-              <button class="btn btn-login">Sign Up</button>
+              <button class="btn btn-login" type="submit">Sign Up</button>
             </div>
             <div class="form-rows">
               <p>
@@ -120,7 +128,7 @@
 
 
 <script>
-// @ is an alias to /src
+import emailjs from "emailjs-com";
 
 import GuestLayout from "@/components/layouts/GuestLayout.vue";
 
@@ -133,6 +141,26 @@ export default {
     this.$emit(`update:layout`, GuestLayout);
   },
   mounted() {},
+  methods: {
+    sendEmail(e) {
+      emailjs
+        .sendForm(
+          "service_4z6hl0r",
+          "template_mrd0di5",
+          e.target,
+          "user_4tVpKl3PomR3wGpPK73Uz"
+        )
+        .then(
+          (result) => {
+            console.log("Email sent successfuly!", result.status, result.text);
+            this.$router.push("/contact-success");
+          },
+          (error) => {
+            console.log("FAILED...", error);
+          }
+        );
+    },
+  },
 };
 </script>
 <style scoped>
@@ -152,12 +180,12 @@ export default {
   z-index: 9;
   overflow: hidden;
   white-space: nowrap;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   width: 100%;
 }
 .placeholder-wrap input {
   background-color: transparent;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   position: relative;
   z-index: 10;
   /* border: 1px #999 solid;
