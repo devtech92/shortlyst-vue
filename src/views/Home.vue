@@ -25,15 +25,21 @@
                 <!-- <div class="banner-vectores banner-vector5">
                   <img src="@/assets/images/ellipse.png" />
                 </div> -->
-                <h1 class="text-center">Say hello to your  ideal <br/> new <span> hires </span></h1>
+                <h1 class="text-center">
+                  Say hello to your ideal <br />
+                  new <span> hires </span>
+                </h1>
                 <!-- <h1 class="text-left">
                   new <span>{{ whois[0] }}</span>
                 </h1> -->
-                
+
                 <p class="text-center">
                   Lead conversion reimagined, using AI & Automation technology.
                 </p>
-                <router-link to="/contact-sales" class="btn btn-blue mt-2 text-center">
+                <router-link
+                  to="/contact-sales"
+                  class="btn btn-blue mt-2 text-center"
+                >
                   Get started for free
                 </router-link>
               </div>
@@ -50,33 +56,38 @@
               </div>
             </div>
           </div>
-          <div class="brand-slider brand-images" style="margin-bottom:50px">
-            <div
-              class="brand-img"
-            >
-              <img src="@/assets/images/home_logo1.png" class="fixed-size-img" />
+          <div class="brand-slider brand-images" style="margin-bottom: 50px">
+            <div class="brand-img">
+              <img
+                src="@/assets/images/home_logo1.png"
+                class="fixed-size-img"
+              />
             </div>
-            <div
-              class="brand-img"
-            >
-              <img src="@/assets/images/home_logo2.png" class="fixed-size-img" />
+            <div class="brand-img">
+              <img
+                src="@/assets/images/home_logo2.png"
+                class="fixed-size-img"
+              />
             </div>
             <!-- -->
-            <div
-              class="brand-img"
-            >
-              <img src="@/assets/images/home_logo4.png" class="fixed-size-img" />
+            <div class="brand-img">
+              <img
+                src="@/assets/images/home_logo4.png"
+                class="fixed-size-img"
+              />
             </div>
-            <div
-              class="brand-img"
-            >
-              <img src="@/assets/images/home_logo5.png" class="fixed-size-img" />
+            <div class="brand-img">
+              <img
+                src="@/assets/images/home_logo5.png"
+                class="fixed-size-img"
+              />
             </div>
-            <div
-              class="brand-img"
-            >
-              <img src="@/assets/images/home_logo3.png" class="fixed-size-img" />
-            </div> 
+            <div class="brand-img">
+              <img
+                src="@/assets/images/home_logo3.png"
+                class="fixed-size-img"
+              />
+            </div>
           </div>
           <!-- <carousel
           
@@ -170,7 +181,9 @@
                     Shortlyst<span>. GROWTH</span>
                   </h6>
                   <div class="hire-btns">
-                    <button type="button"  class="btn btn-comming">Coming soon</button>
+                    <button type="button" class="btn btn-comming">
+                      Coming soon
+                    </button>
                   </div>
                 </div>
               </div>
@@ -369,6 +382,9 @@
         </div>
       </section>
     </main>
+
+    <!-- whatsapp social icon -->
+    <whatsapp-social-icon></whatsapp-social-icon>
   </div>
 </template>
 
@@ -377,10 +393,12 @@
 // @ is an alias to /src
 // import carousel from "vue-owl-carousel";
 import DefaultLayout from "@/components/layouts/DefaultLayout.vue";
+import WhatsappSocialIcon from "../components/WhatsappSocialIcon.vue";
 
 export default {
   name: "Home",
   components: {
+    WhatsappSocialIcon,
     // carousel,
   },
   data() {
