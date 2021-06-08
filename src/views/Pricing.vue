@@ -24,6 +24,7 @@
                 Find a plan that<br />
                 best fits you
               </h2>
+              
                <div class="bill-annualy">
                 <h6 class="monthly-pay">Bill monthly</h6>
                 <label class="switch">

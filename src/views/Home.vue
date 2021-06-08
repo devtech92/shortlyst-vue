@@ -29,6 +29,7 @@
                 <!-- <h1 class="text-left">
                   new <span>{{ whois[0] }}</span>
                 </h1> -->
+                
                 <p class="text-center">
                   Lead conversion reimagined, using AI & Automation technology.
                 </p>
